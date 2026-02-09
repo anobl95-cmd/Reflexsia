@@ -336,6 +336,31 @@
     </main>
   </div>
 
+  <!-- Firebase (Web SDK, modular) -->
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyBUo50f-Po7VzdR00zaOIBbFHiLIj0oNUY",
+      authDomain: "reflexsia.firebaseapp.com",
+      projectId: "reflexsia",
+      storageBucket: "reflexsia.firebasestorage.app",
+      messagingSenderId: "187026556955",
+      appId: "1:187026556955:web:e6778a8ed3d6172cf810be"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+
+    // Expose for non-module scripts (optional)
+    window.firebaseApp = app;
+  </script>
+
+
   <script>
     (function(){
       const canopy = document.getElementById('canopy');
